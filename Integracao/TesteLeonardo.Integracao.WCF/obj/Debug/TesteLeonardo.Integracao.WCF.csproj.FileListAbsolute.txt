@@ -1,0 +1,12 @@
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\ApplicationInsights.config
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Servico.dll.config
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Servico.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Servico.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\Microsoft.AI.Web.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Integracao.WCF.csprojResolveAssemblyReference.cache
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.pdb

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.Integracao.WCF", "Integracao\TesteLeonardo.Integracao.WCF\TesteLeonardo.Integracao.WCF.csproj", "{355B3169-EC6D-445D-BAAF-FDE57DB410A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.UI", "TesteLeonardo.UI\TesteLeonardo.UI.csproj", "{FAA8BC2A-A5DE-483E-B78B-255F8A918F7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.Repositorio", "TesteLeonardo.Repositorio\TesteLeonardo.Repositorio.csproj", "{010E9502-310B-4804-B58C-3E0AB174A4B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.Dominio", "TesteLeonardo.Dominio\TesteLeonardo.Dominio.csproj", "{29C143A4-2392-45A2-BF82-69E7ABBD3613}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integracao", "Integracao", "{C3ED9C5A-7F29-4C34-A837-D101C8D23003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.Service", "TesteLeonardo.Service\TesteLeonardo.Service.csproj", "{F09B7C83-2F4F-4218-AA6D-C9B2F0753285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.Interface", "TesteLeonardo.Interface\TesteLeonardo.Interface.csproj", "{BEDD5830-669F-4541-9851-BC8ED6C59A8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{355B3169-EC6D-445D-BAAF-FDE57DB410A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355B3169-EC6D-445D-BAAF-FDE57DB410A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355B3169-EC6D-445D-BAAF-FDE57DB410A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355B3169-EC6D-445D-BAAF-FDE57DB410A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA8BC2A-A5DE-483E-B78B-255F8A918F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA8BC2A-A5DE-483E-B78B-255F8A918F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA8BC2A-A5DE-483E-B78B-255F8A918F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA8BC2A-A5DE-483E-B78B-255F8A918F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{010E9502-310B-4804-B58C-3E0AB174A4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010E9502-310B-4804-B58C-3E0AB174A4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010E9502-310B-4804-B58C-3E0AB174A4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010E9502-310B-4804-B58C-3E0AB174A4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C143A4-2392-45A2-BF82-69E7ABBD3613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C143A4-2392-45A2-BF82-69E7ABBD3613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C143A4-2392-45A2-BF82-69E7ABBD3613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C143A4-2392-45A2-BF82-69E7ABBD3613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F09B7C83-2F4F-4218-AA6D-C9B2F0753285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09B7C83-2F4F-4218-AA6D-C9B2F0753285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09B7C83-2F4F-4218-AA6D-C9B2F0753285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09B7C83-2F4F-4218-AA6D-C9B2F0753285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDD5830-669F-4541-9851-BC8ED6C59A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDD5830-669F-4541-9851-BC8ED6C59A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDD5830-669F-4541-9851-BC8ED6C59A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDD5830-669F-4541-9851-BC8ED6C59A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{355B3169-EC6D-445D-BAAF-FDE57DB410A0} = {C3ED9C5A-7F29-4C34-A837-D101C8D23003}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.csprojResolveAssemblyReference.cache
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Service.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Service.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Dominio.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Repositorio.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\EntityFramework.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Interface.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Dominio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Repositorio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\EntityFramework.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Interface.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.pdb

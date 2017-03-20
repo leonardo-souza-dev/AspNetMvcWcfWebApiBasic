@@ -1,0 +1,7 @@
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Interface.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Interface.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Dominio.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Dominio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.csprojResolveAssemblyReference.cache
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.pdb

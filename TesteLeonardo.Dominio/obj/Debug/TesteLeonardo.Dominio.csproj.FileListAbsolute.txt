@@ -1,0 +1,14 @@
+c:\users\leona\documents\visual studio 2015\Projects\TesteLeonardo.Servico\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.dll
+c:\users\leona\documents\visual studio 2015\Projects\TesteLeonardo.Servico\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.pdb
+c:\users\leona\documents\visual studio 2015\Projects\TesteLeonardo.Servico\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.dll
+c:\users\leona\documents\visual studio 2015\Projects\TesteLeonardo.Servico\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.dll.config
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\EntityFramework.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\EntityFramework.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\EntityFramework.SqlServer.xml

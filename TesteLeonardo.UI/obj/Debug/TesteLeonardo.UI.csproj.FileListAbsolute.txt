@@ -282,3 +282,7 @@ E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.UI\bin\Microsoft.Owin.Security
 E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.UI\bin\Microsoft.Owin.Security.Google.xml
 E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.UI\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\Ninject.Web.WebApi.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\Ninject.Web.WebApi.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\Ninject.Web.WebApi.WebHost.xml

@@ -4,29 +4,36 @@
     ViewBag.Title = "Home Page";
 }
 <script>
-    function gerarToken() {
+    function buscarProdutosAjax() {
 
+        $.get('/api/produtos', function (response) {
+            
+            $('.produtos').remove();
+
+            for (var i = 0; i < response.length; i++) {
+                var nome = response[i].nome;
+                var descricao = response[i].descricao;
+                var preco = response[i].preco;
+
+                $('.table tr:last').after('<tr class="produtos"><td>' + nome + '</td><td>' + descricao + '</td><td>' + preco + '</td></tr>');
+            }            
+        })
     }
 </script>
 <div ng-controller="HomeController" style="border:1px solid gray; border-radius: 8px;padding:24px">
-    <form action="/Home/gerarToken">
-        <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;">Gerar Token</button>
-        <p style="margin:0 8 0 48px;">
-            Token: @if (ViewBag.Token != null)
-            {
-                @ViewBag.Token
-            }
-            else
-            {
-                <TEXT>XX-XX-XXX_XXXXXXXX-XXX</TEXT>
-            }
-            <br />Token expira em: 1 minuto
-        </p>
-    </form>
+    
+    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;" ng-click="gerarToken()">Gerar Token</button>
+    
+    <p style="margin-top:24px;">
+        Token: {{guid}}
+        <br />
+        Token expira em: {{expiraEm}}
+    </p>
+
     <hr/>
-    {{Mensagem}}
-    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;">Buscar Produtos MVC</button>
-    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;">Buscar Produtos Ajax</button>
+
+    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;" ng-click="buscarProdutosMVC()">Buscar Produtos MVC</button>
+    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;" onclick="buscarProdutosAjax()">Buscar Produtos Ajax</button>
 
     <table class="table" style="margin-top: 40px;">
         <tr>
@@ -39,28 +46,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Preco)
             </th>
-            <th></th>
         </tr>
 
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Descricao)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Preco)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-                </td>
-            </tr>
-        }
-
+        <tr ng-repeat="produtoMVC in produtosMVC" class="produtos">
+            <td>{{ produtoMVC.nome }}</td>
+            <td>{{ produtoMVC.descricao }}</td>
+            <td>{{ produtoMVC.preco }}</td>
+        </tr>
     </table>
 </div>

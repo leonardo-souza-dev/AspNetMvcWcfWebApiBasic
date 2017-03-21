@@ -65,6 +65,6 @@ namespace TesteLeonardo.UI.App_Start
         {
             kernel.Bind<ApplicationDbContext>().ToSelf().InRequestScope();
             kernel.Bind<IProdutoRepositorio>().To<ProdutoRepositorio>().InRequestScope();
-        }        
+        }
     }
 }

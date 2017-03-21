@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -20,9 +21,11 @@ namespace TesteLeonardo.Dominio
 
         [Required]
         [StringLength(255)]
+        [DisplayName("Descrição")]
         public string Descricao { get; set; }
 
         [Required]
+        [DisplayName("Preço")]
         public decimal Preco { get; set; }
     }
 }

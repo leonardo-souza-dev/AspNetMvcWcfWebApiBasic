@@ -17,3 +17,5 @@ E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\
 E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Integracao.WCF.csprojResolveAssemblyReference.cache
 E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.dll
 E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Dominio.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Dominio.pdb

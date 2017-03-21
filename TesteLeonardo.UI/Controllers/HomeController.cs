@@ -23,11 +23,15 @@ namespace TesteLeonardo.UI.Controllers
             return View(produtos);
         }
 
-        public ActionResult About()
+        public ActionResult GerarToken()
         {
-            ViewBag.Message = "Your application description page.";
+            ServiceReference1.Service1Client clienteWcf = new ServiceReference1.Service1Client();
 
-            return View();
+            var token = clienteWcf.GetToken();
+
+            ViewBag.Token = token;
+
+            return View("Index");
         }
 
         public ActionResult Contact()

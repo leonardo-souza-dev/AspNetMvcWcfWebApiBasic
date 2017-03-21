@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.Integracao.WCF", "Integracao\TesteLeonardo.Integracao.WCF\TesteLeonardo.Integracao.WCF.csproj", "{355B3169-EC6D-445D-BAAF-FDE57DB410A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.UI", "TesteLeonardo.UI\TesteLeonardo.UI.csproj", "{FAA8BC2A-A5DE-483E-B78B-255F8A918F7B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{355B3169-EC6D-445D-BAAF-FDE57DB410A0} = {355B3169-EC6D-445D-BAAF-FDE57DB410A0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLeonardo.Repositorio", "TesteLeonardo.Repositorio\TesteLeonardo.Repositorio.csproj", "{010E9502-310B-4804-B58C-3E0AB174A4B2}"
 EndProject

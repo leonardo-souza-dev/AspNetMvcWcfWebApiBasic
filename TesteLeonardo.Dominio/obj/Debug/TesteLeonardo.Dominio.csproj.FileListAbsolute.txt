@@ -12,3 +12,13 @@ C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\EntityFramework.xml
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Dominio\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.dll.config
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\bin\Debug\TesteLeonardo.Dominio.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\bin\Debug\EntityFramework.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\bin\Debug\EntityFramework.xml
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Dominio\obj\Debug\TesteLeonardo.Dominio.csprojResolveAssemblyReference.cache

@@ -3,13 +3,17 @@
 @{
     ViewBag.Title = "Home Page";
 }
-<div ng-controller="HomeController">
-    <h2>{{Mensagem}}</h2>
+<div ng-controller="HomeController" style="border:1px solid gray; border-radius: 8px;padding:24px">
+    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;">Gerar Token</button>
+    <p style="margin:0 8 0 48px;">Token: {{Mensagem}}
+    <br/>Token expira em: 1 minuto</p>
+    
+    <hr/>
+    
+    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;">Buscar Produtos MVC</button>
+    <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;">Buscar Produtos Ajax</button>
 
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
+    <table class="table" style="margin-top: 40px;">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
@@ -44,4 +48,4 @@
         }
 
     </table>
-</div>
+</hr>

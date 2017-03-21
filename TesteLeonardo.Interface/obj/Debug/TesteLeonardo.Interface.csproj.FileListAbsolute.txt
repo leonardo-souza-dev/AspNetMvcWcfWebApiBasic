@@ -5,3 +5,10 @@ C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.csprojResolveAssemblyReference.cache
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.dll
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Interface.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Interface.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Dominio.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Interface\bin\Debug\TesteLeonardo.Dominio.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.csprojResolveAssemblyReference.cache
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Interface\obj\Debug\TesteLeonardo.Interface.pdb

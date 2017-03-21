@@ -11,3 +11,16 @@ C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Interface.pdb
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.dll
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Service.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Service.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Dominio.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Repositorio.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\EntityFramework.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Interface.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Dominio.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Repositorio.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\EntityFramework.xml
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\bin\Debug\TesteLeonardo.Interface.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.csprojResolveAssemblyReference.cache
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\TesteLeonardo.Service\obj\Debug\TesteLeonardo.Service.pdb

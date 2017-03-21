@@ -10,3 +10,10 @@ C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\Te
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Integracao.WCF.csprojResolveAssemblyReference.cache
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.dll
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\ApplicationInsights.config
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Servico.dll.config
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Servico.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Servico.pdb
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Integracao.WCF.csprojResolveAssemblyReference.cache
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.dll
+E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\obj\Debug\TesteLeonardo.Servico.pdb

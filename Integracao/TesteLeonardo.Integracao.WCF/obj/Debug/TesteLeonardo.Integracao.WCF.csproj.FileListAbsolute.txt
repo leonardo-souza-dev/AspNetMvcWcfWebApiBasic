@@ -16,3 +16,11 @@ E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\
 E:\Projects\AspNetMvcWcfWebApiBasic\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Dominio.pdb
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Dominio.dll
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Dominio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Service.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Repositorio.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\EntityFramework.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Interface.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Service.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Repositorio.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\EntityFramework.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\Integracao\TesteLeonardo.Integracao.WCF\bin\TesteLeonardo.Interface.pdb

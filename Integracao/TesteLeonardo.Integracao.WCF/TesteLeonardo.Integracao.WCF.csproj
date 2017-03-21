@@ -119,6 +119,10 @@
       <Project>{29c143a4-2392-45a2-bf82-69e7abbd3613}</Project>
       <Name>TesteLeonardo.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\TesteLeonardo.Service\TesteLeonardo.Service.csproj">
+      <Project>{f09b7c83-2f4f-4218-aa6d-c9b2f0753285}</Project>
+      <Name>TesteLeonardo.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

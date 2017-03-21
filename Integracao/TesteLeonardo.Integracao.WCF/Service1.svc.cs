@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 using TesteLeonardo.Dominio;
+using TesteLeonardo.Service;
 
 namespace TesteLeonardo.Servico
 {
@@ -13,13 +14,21 @@ namespace TesteLeonardo.Servico
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public Token GetToken()
-        {
-            Token token = new Token();
-            token.Guid = Guid.NewGuid();
-            token.ExpiraEm = DateTime.Now.AddMinutes(1);
+        private Token token;
 
-            return token;
+        public Token GenerateToken()
+        {
+            TokenService.GenerateToken();
+
+            return TokenService.Token;
+        }
+
+        public bool ValidateToken(string token)
+        {
+            var validacaoGuid = TokenService.Token.Guid.ToString().ToUpper() == token.ToUpper();
+            var validacaoTempo = TokenService.Token.ExpiraEm > DateTime.Now;
+
+            return validacaoGuid && validacaoTempo;
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)

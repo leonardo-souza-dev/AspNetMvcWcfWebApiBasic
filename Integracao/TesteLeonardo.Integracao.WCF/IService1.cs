@@ -13,7 +13,10 @@ namespace TesteLeonardo.Servico
     public interface IService1
     {
         [OperationContract]
-        Token GetToken();
+        Token GenerateToken();
+
+        [OperationContract]
+        bool ValidateToken(string token);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

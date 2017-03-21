@@ -175,3 +175,9 @@ C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\obj\Debug\TesteLeonardo.UI.csprojResolveAssemblyReference.cache
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\obj\Debug\TesteLeonardo.UI.dll
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\obj\Debug\TesteLeonardo.UI.pdb
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\System.Net.Http.Formatting.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\System.Web.Http.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\System.Web.Http.WebHost.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\System.Net.Http.Formatting.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\System.Web.Http.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\System.Web.Http.WebHost.xml

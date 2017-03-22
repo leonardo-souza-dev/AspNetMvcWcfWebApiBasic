@@ -49,6 +49,10 @@
       <Project>{29c143a4-2392-45a2-bf82-69e7abbd3613}</Project>
       <Name>TesteLeonardo.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TesteLeonardo.Interface\TesteLeonardo.Interface.csproj">
+      <Project>{bedd5830-669f-4541-9851-bc8ed6c59a8f}</Project>
+      <Name>TesteLeonardo.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TesteLeonardo.Repositorio\TesteLeonardo.Repositorio.csproj">
       <Project>{010e9502-310b-4804-b58c-3e0ab174a4b2}</Project>
       <Name>TesteLeonardo.Repositorio</Name>

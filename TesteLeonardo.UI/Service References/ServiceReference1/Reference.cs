@@ -78,11 +78,17 @@ namespace TesteLeonardo.UI.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetToken", ReplyAction="http://tempuri.org/IService1/GetTokenResponse")]
-        TesteLeonardo.Dominio.Token GetToken();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GenerateToken", ReplyAction="http://tempuri.org/IService1/GenerateTokenResponse")]
+        TesteLeonardo.Dominio.Token GenerateToken();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetToken", ReplyAction="http://tempuri.org/IService1/GetTokenResponse")]
-        System.Threading.Tasks.Task<TesteLeonardo.Dominio.Token> GetTokenAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GenerateToken", ReplyAction="http://tempuri.org/IService1/GenerateTokenResponse")]
+        System.Threading.Tasks.Task<TesteLeonardo.Dominio.Token> GenerateTokenAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ValidateToken", ReplyAction="http://tempuri.org/IService1/ValidateTokenResponse")]
+        bool ValidateToken(string token);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ValidateToken", ReplyAction="http://tempuri.org/IService1/ValidateTokenResponse")]
+        System.Threading.Tasks.Task<bool> ValidateTokenAsync(string token);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
         TesteLeonardo.UI.ServiceReference1.CompositeType GetDataUsingDataContract(TesteLeonardo.UI.ServiceReference1.CompositeType composite);
@@ -118,12 +124,20 @@ namespace TesteLeonardo.UI.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public TesteLeonardo.Dominio.Token GetToken() {
-            return base.Channel.GetToken();
+        public TesteLeonardo.Dominio.Token GenerateToken() {
+            return base.Channel.GenerateToken();
         }
         
-        public System.Threading.Tasks.Task<TesteLeonardo.Dominio.Token> GetTokenAsync() {
-            return base.Channel.GetTokenAsync();
+        public System.Threading.Tasks.Task<TesteLeonardo.Dominio.Token> GenerateTokenAsync() {
+            return base.Channel.GenerateTokenAsync();
+        }
+        
+        public bool ValidateToken(string token) {
+            return base.Channel.ValidateToken(token);
+        }
+        
+        public System.Threading.Tasks.Task<bool> ValidateTokenAsync(string token) {
+            return base.Channel.ValidateTokenAsync(token);
         }
         
         public TesteLeonardo.UI.ServiceReference1.CompositeType GetDataUsingDataContract(TesteLeonardo.UI.ServiceReference1.CompositeType composite) {

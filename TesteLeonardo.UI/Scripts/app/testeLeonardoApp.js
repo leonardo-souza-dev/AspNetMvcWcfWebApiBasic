@@ -4,6 +4,8 @@
 
     app.controller('HomeController', function ($scope, $http) {
 
+        var guid = "";
+
         $scope.guid = "XXXX-XX-XXXXXXX-XXXX-XXXX-XXXXX-XXXX";
         $scope.expiraEm = "1 minuto";
 
@@ -20,9 +22,10 @@
                 var ss = dt.getUTCSeconds();
                 var expiraEm = padZero(hr) + ":" + padZero(mm) + ":" + padZero(ss);
 
-
                 $scope.expiraEm = expiraEm;
-                $scope.guid = response.data.guid.toUpperCase();
+                guid = response.data.guid.toUpperCase();
+                
+                $scope.guid = guid;
 
             }, function erroCallback(response) {
                 console.log('Error');
@@ -40,7 +43,8 @@
 
             $http({
                 method: 'GET',
-                url: '/api/produtos'
+                url: '/api/produtos',
+                params: { token: guid }
             }).then(function successCallback(response) {
 
                 $scope.produtosMVC = response.data;

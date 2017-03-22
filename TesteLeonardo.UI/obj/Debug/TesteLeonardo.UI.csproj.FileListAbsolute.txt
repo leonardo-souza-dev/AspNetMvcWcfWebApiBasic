@@ -286,3 +286,5 @@ C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\Ninject.Web.WebApi.WebHost.dll
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\Ninject.Web.WebApi.xml
 C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\TesteLeonardo.Service.dll
+C:\Users\leona\Documents\Visual Studio 2015\Projects\TesteLeonardo\TesteLeonardo.UI\bin\TesteLeonardo.Service.pdb

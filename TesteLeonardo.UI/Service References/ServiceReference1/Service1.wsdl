@@ -8,11 +8,17 @@
       <xsd:import schemaLocation="http://localhost:58757/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/TesteLeonardo.Servico" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_GetToken_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetToken" />
+  <wsdl:message name="IService1_GenerateToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateToken" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetToken_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetTokenResponse" />
+  <wsdl:message name="IService1_GenerateToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidateToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateToken" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidateToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTokenResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
@@ -21,9 +27,13 @@
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
-    <wsdl:operation name="GetToken">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetToken" message="tns:IService1_GetToken_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTokenResponse" message="tns:IService1_GetToken_OutputMessage" />
+    <wsdl:operation name="GenerateToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GenerateToken" message="tns:IService1_GenerateToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GenerateTokenResponse" message="tns:IService1_GenerateToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidateToken" message="tns:IService1_ValidateToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidateTokenResponse" message="tns:IService1_ValidateToken_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -32,8 +42,17 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="GetToken">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetToken" style="document" />
+    <wsdl:operation name="GenerateToken">
+      <soap:operation soapAction="http://tempuri.org/IService1/GenerateToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateToken">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidateToken" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

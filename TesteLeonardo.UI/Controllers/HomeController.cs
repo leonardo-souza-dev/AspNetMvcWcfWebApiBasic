@@ -23,16 +23,16 @@ namespace TesteLeonardo.UI.Controllers
             return View(produtos);
         }
 
-        public ActionResult GerarToken()
-        {
-            ServiceReference1.Service1Client clienteWcf = new ServiceReference1.Service1Client();
+        //public ActionResult GerarToken()
+        //{
+        //    ServiceReference1.Service1Client clienteWcf = new ServiceReference1.Service1Client();
 
-            var token = clienteWcf.GetToken();
+        //    var token = clienteWcf.GenerateToken();
 
-            ViewBag.Token = token;
+        //    ViewBag.Token = token;
 
-            return View("Index");
-        }
+        //    return View("Index");
+        //}
 
         public ActionResult Contact()
         {

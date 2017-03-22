@@ -17,7 +17,7 @@ namespace TesteLeonardo.UI.Api.Controllers
         {
             ServiceReference1.Service1Client clienteWcf = new ServiceReference1.Service1Client();
 
-            var token = clienteWcf.GetToken();
+            var token = clienteWcf.GenerateToken();
 
             return token;
         }

@@ -10,8 +10,9 @@ namespace TesteLeonardo.UI.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
-    using Repositorio;
     using Interface;
+    using Service;
+    using Repositorio;
 
     public static class NinjectWebCommon 
     {
@@ -65,6 +66,7 @@ namespace TesteLeonardo.UI.App_Start
         {
             kernel.Bind<ApplicationDbContext>().ToSelf().InRequestScope();
             kernel.Bind<IProdutoRepositorio>().To<ProdutoRepositorio>().InRequestScope();
+            kernel.Bind<ITokenService>().To<TokenService>().InRequestScope();
         }
     }
 }

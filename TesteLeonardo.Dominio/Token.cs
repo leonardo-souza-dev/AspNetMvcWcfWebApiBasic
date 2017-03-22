@@ -12,5 +12,6 @@ namespace TesteLeonardo.Dominio
     {
         public Guid Guid { get; set; }
         public DateTime ExpiraEm { get; set; }
+        public string Chave { get; set; }
     }
 }

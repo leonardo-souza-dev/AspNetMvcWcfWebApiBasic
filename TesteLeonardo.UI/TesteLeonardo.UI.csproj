@@ -236,6 +236,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\api\DefaultController.cs" />
     <Compile Include="Controllers\api\TokenController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -1131,6 +1132,10 @@
     <ProjectReference Include="..\TesteLeonardo.Repositorio\TesteLeonardo.Repositorio.csproj">
       <Project>{010e9502-310b-4804-b58c-3e0ab174a4b2}</Project>
       <Name>TesteLeonardo.Repositorio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TesteLeonardo.Service\TesteLeonardo.Service.csproj">
+      <Project>{f09b7c83-2f4f-4218-aa6d-c9b2f0753285}</Project>
+      <Name>TesteLeonardo.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

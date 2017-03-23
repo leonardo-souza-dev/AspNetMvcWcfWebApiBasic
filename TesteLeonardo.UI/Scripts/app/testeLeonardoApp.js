@@ -62,7 +62,7 @@
 
             $http({
                 method: 'GET',
-                url: '/api/produtos',
+                url: '/api/GetProducts',
                 params: { token: guid, expiraEm: expiraEm }
             }).then(function successCallback(response) {
 

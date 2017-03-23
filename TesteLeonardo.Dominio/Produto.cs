@@ -13,6 +13,7 @@ namespace TesteLeonardo.Dominio
     public class Produto
     {
         [Key]
+        [DisplayName("Id")]
         public int ID { get; set; }
 
         [Required]

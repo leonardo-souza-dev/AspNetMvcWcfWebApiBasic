@@ -3,10 +3,22 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<style>
+    table,tbody,tr,th,td {
+        border: 2px solid black;
+    }
+    tr{
+        height:auto;
+    }
+    th {
+        color: white;
+        font-weight:bold;
+    }
+</style>
 <script>
     function buscarProdutosAjax() {
 
-        $.get('/api/produtos', {
+        $.get('/api/GetProducts', {
             token: $('#guid').html(),
             expiraEm: $('#expiraEm').html()
         }, function (response) {
@@ -29,11 +41,12 @@
             }
 
             for (var i = 0; i < response.length; i++) {
+                var id = response[i].id;
                 var nome = response[i].nome;
                 var descricao = response[i].descricao;
                 var preco = response[i].preco;
                 
-                $('.table tr:last').after('<tr class="produtos"><td>' + nome + '</td><td>' + descricao + '</td><td>' + formataReal(preco) + '</td></tr>');
+                $('.table tr:last').after('<tr class="produtos"><td>' + id + '</td><td>' + nome + '</td><td>' + descricao + '</td><td>' + formataReal(preco) + '</td></tr>');
             }
         })
     }
@@ -65,7 +78,10 @@
     <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;" onclick="buscarProdutosAjax()">Buscar Produtos Ajax</button>
 
     <table class="table" style="margin-top: 40px;">
-        <tr>
+        <tr bgcolor="#90A1B8">
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
@@ -78,6 +94,7 @@
         </tr>
 
         <tr ng-repeat="produtoMVC in produtosMVC" class="produtos">
+            <td>{{ produtoMVC.id }}</td>
             <td>{{ produtoMVC.nome }}</td>
             <td>{{ produtoMVC.descricao }}</td>
             <td>{{ produtoMVC.preco }}</td>

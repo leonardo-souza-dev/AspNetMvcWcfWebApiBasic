@@ -23,7 +23,8 @@ namespace TesteLeonardo.UI.Api.Controllers
             TokenService = tokenService;
         }
 
-        public IEnumerable<Produto> Get(string token, string expiraEm)
+        [Route("api/GetProducts")]
+        public IEnumerable<Produto> GetProducts(string token, string expiraEm)
         {
             if (TokenService.ValidateToken(token.Replace("-",""), expiraEm))
             {

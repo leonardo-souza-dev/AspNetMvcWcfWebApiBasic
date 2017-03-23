@@ -13,8 +13,6 @@ namespace TesteLeonardo.Servico
 {
     public class Service1 : IService1
     {
-       
-
         public Token GenerateToken()
         {
             ITokenService tokenService = new TokenService();

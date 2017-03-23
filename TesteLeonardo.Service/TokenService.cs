@@ -18,14 +18,13 @@ namespace TesteLeonardo.Service
         public Token GenerateToken()
         {
             Token token = new Token();
-            
-            //var expiraEm = DateTime.Now.AddMinutes(1);
-            var expiraEm = DateTime.Now.AddSeconds(10);
-
+            var expiraEm = DateTime.Now.AddMinutes(1);
             token.ExpiraEm = expiraEm;
+
             var md5 = Helper.StringCipher.ToMD5(expiraEm.ToString("HH:mm:ss"));
-            //token.Guid = Guid.Parse(md5);
-            token.Chave = md5;
+            //token.Chave = md5;
+            token.Guid = Guid.Parse(md5);
+
             return token;
         }
          

@@ -7,6 +7,8 @@
         var guid = "";
         var expiraEm = "";
 
+        $scope.tokenGerado = false;
+
         $scope.guid = "XXXX-XX-XXXXXXX-XXXX-XXXX-XXXXX-XXXX";
         $scope.expiraEm = "1 minuto";
 
@@ -26,13 +28,14 @@
 
                 $scope.expiraEm = expiraEm;
 
-                guid = response.data.chave;
+                guid = response.data.guid;
                 
                 $scope.guid = guid.toUpperCase();
 
                 $('#tokenExpirado').addClass('ng-hide');
                 $scope.tokenExpirado = false;
-                
+
+                $scope.tokenGerado = true;                
 
             }, function erroCallback(response) {
                 console.log('Error');
@@ -45,6 +48,12 @@
         }
 
         $scope.buscarProdutosMVC = function () {
+
+            if ($scope.tokenGerado == false) {
+                alert('É necessário gerar um token!');
+                return;
+            }
+                
 
             $('.produtos').remove();
 
@@ -65,6 +74,10 @@
                 }
 
                 $scope.produtosMVC = response.data;
+
+                angular.forEach($scope.produtosMVC, function (value, key) {
+                    value.preco = formataReal(value.preco);
+                });
 
             }, function erroCallback(response) {
                 console.log('Error');

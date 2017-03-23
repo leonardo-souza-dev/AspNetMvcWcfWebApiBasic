@@ -25,7 +25,7 @@ namespace TesteLeonardo.UI.Api.Controllers
 
         public IEnumerable<Produto> Get(string token, string expiraEm)
         {
-            if (TokenService.ValidateToken(token, expiraEm))
+            if (TokenService.ValidateToken(token.Replace("-",""), expiraEm))
             {
                 var produtos = ProdutoRepositorio.ObterProdutos();
 

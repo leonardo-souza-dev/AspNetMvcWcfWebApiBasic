@@ -23,14 +23,15 @@ namespace TesteLeonardo.UI.Api.Controllers
             TokenService = tokenService;
         }
 
-        public IEnumerable<Produto> Get(string token)
+        public IEnumerable<Produto> Get(string token, string expiraEm)
         {
-            if (TokenService.ValidateToken(token))
+            if (TokenService.ValidateToken(token, expiraEm))
             {
                 var produtos = ProdutoRepositorio.ObterProdutos();
 
                 return produtos;
             }
+
             return null;
         }
     }

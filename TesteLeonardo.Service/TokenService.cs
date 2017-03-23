@@ -18,24 +18,38 @@ namespace TesteLeonardo.Service
         public Token GenerateToken()
         {
             Token token = new Token();
-            var agora = DateTime.Now;
-            token.ExpiraEm = agora;
-            var chave = Helper.StringCipher.Encrypt(agora.ToString(), "=L$J&&ybt+7!A!wn").ToUpper();
-            token.Guid = Guid.Parse(chave);
+            
+            //var expiraEm = DateTime.Now.AddMinutes(1);
+            var expiraEm = DateTime.Now.AddSeconds(10);
+
+            token.ExpiraEm = expiraEm;
+            var md5 = Helper.StringCipher.ToMD5(expiraEm.ToString("HH:mm:ss"));
+            //token.Guid = Guid.Parse(md5);
+            token.Chave = md5;
             return token;
         }
-
-        public bool ValidateToken(string pToken)
+         
+        public bool ValidateToken(string pToken, string expiraEm)
         {
-            //TODO: implementar a decriptografia com metodo novo do helper
-            if (token == null || token.Guid == null)
-            {
-                return false;
-            }
-            var validacaoGuid = token.Guid.ToString().ToUpper() == pToken.ToUpper();
-            var validacaoTempo = token.ExpiraEm > DateTime.Now;
+            bool validacaoToken = false;
 
-            return validacaoGuid && validacaoTempo;
+            if (string.IsNullOrEmpty(pToken))
+            {
+                return validacaoToken;
+            }
+            var validacaoMd5 = Helper.StringCipher.ValidaMD5(pToken, expiraEm);
+
+            if (validacaoMd5)
+            { 
+                var expira = Convert.ToDateTime(expiraEm);
+
+                if (expira > DateTime.Now)
+                {
+                    validacaoToken = true;
+                }
+            }
+
+            return validacaoToken;
         }
     }
 }

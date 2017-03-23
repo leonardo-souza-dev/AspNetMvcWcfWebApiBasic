@@ -11,6 +11,6 @@ namespace TesteLeonardo.Interface
     {
         Token GenerateToken();
 
-        bool ValidateToken(string guid);
+        bool ValidateToken(string guid, string expiraEm);
     }
 }

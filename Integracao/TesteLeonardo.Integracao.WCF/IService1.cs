@@ -16,6 +16,6 @@ namespace TesteLeonardo.Servico
         Token GenerateToken();
 
         [OperationContract]
-        bool ValidateToken(string token);
+        bool ValidateToken(string token, string expiraEm);
     }
 }

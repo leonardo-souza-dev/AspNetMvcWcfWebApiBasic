@@ -5,6 +5,7 @@
     app.controller('HomeController', function ($scope, $http) {
 
         var guid = "";
+        var expiraEm = "";
 
         $scope.guid = "XXXX-XX-XXXXXXX-XXXX-XXXX-XXXXX-XXXX";
         $scope.expiraEm = "1 minuto";
@@ -17,15 +18,19 @@
             }).then(function successCallback(response) {
 
                 var dt = new Date(response.data.expiraEm);
-                var hr = dt.getUTCHours();
+                var hr = dt.getHours();
                 var mm = dt.getUTCMinutes();
                 var ss = dt.getUTCSeconds();
-                var expiraEm = padZero(hr) + ":" + padZero(mm) + ":" + padZero(ss);
+
+                expiraEm = padZero(hr) + ":" + padZero(mm) + ":" + padZero(ss);
 
                 $scope.expiraEm = expiraEm;
-                guid = response.data.guid.toUpperCase();
+
+                guid = response.data.chave;
                 
-                $scope.guid = guid;
+                $scope.guid = guid.toUpperCase();
+
+                $scope.tokenExpirado = false;
 
             }, function erroCallback(response) {
                 console.log('Error');
@@ -41,11 +46,21 @@
 
             $('.produtos').remove();
 
+            console.log(guid);
+            console.log(expiraEm);
+
             $http({
                 method: 'GET',
                 url: '/api/produtos',
-                params: { token: guid }
+                params: { token: guid, expiraEm: expiraEm }
             }).then(function successCallback(response) {
+
+                console.log('response.data == null');
+                console.log(response.data == null);
+
+                if (response.data == null) {
+                    $scope.tokenExpirado = true;
+                }
 
                 $scope.produtosMVC = response.data;
 

@@ -21,10 +21,10 @@ namespace TesteLeonardo.Servico
             return tokenService.GenerateToken();
         }
 
-        public bool ValidateToken(string guid)
+        public bool ValidateToken(string guid, string expiraEm)
         {
             ITokenService tokenService = new TokenService();
-            return tokenService.ValidateToken(guid);
+            return tokenService.ValidateToken(guid, expiraEm);
         }
     }
 }

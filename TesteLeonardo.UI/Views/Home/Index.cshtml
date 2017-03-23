@@ -6,9 +6,18 @@
 <script>
     function buscarProdutosAjax() {
 
-        $.get('/api/produtos', function (response) {
-            
+        $.get('/api/produtos', { token: $('#guid').html(), expiraEm: $('#expiraEm').html() }, function (response) {
+
             $('.produtos').remove();
+
+            console.log('response == null');
+            console.log(response == null);
+
+            if (response == null) {
+                $('#tokenExpirado').removeClass();
+                $('#tokenExpirado').show("slow");
+                return;
+            }
 
             for (var i = 0; i < response.length; i++) {
                 var nome = response[i].nome;
@@ -16,21 +25,25 @@
                 var preco = response[i].preco;
 
                 $('.table tr:last').after('<tr class="produtos"><td>' + nome + '</td><td>' + descricao + '</td><td>' + preco + '</td></tr>');
-            }            
+            }
         })
     }
 </script>
 <div ng-controller="HomeController" style="border:1px solid gray; border-radius: 8px;padding:24px">
-    
+
     <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;" ng-click="gerarToken()">Gerar Token</button>
-    
+
     <p style="margin-top:24px;">
-        Token: {{guid}}
+        Token: <span id="guid">{{guid}}</span>
         <br />
-        Token expira em: {{expiraEm}}
+        Token expira em: <span id="expiraEm">{{expiraEm}}</span>
     </p>
 
-    <hr/>
+    <div ng-show="tokenExpirado" id="tokenExpirado">
+        <span style="font-size:24px;color:tomato;">Token expirado!</span>
+    </div>
+
+    <hr />
 
     <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;" ng-click="buscarProdutosMVC()">Buscar Produtos MVC</button>
     <button id="gerarToken" style="border-radius: 8px;height:50px;width:140px;" onclick="buscarProdutosAjax()">Buscar Produtos Ajax</button>

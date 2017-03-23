@@ -31,7 +31,7 @@ namespace TesteLeonardo.Helper
         // This constant determines the number of iterations for the password bytes generation function.
         private const int DerivationIterations = 1000;
 
-        public static string Encrypt(string plainText, string passPhrase)
+        public static string Encrypt(string plainText, string passPhrase, bool converterMD5)
         {
             // Salt and IV is randomly generated each time, but is preprended to encrypted cipher text
             // so that the same Salt and IV values can be used when decrypting.  
@@ -60,10 +60,19 @@ namespace TesteLeonardo.Helper
                                 cipherTextBytes = cipherTextBytes.Concat(memoryStream.ToArray()).ToArray();
                                 memoryStream.Close();
                                 cryptoStream.Close();
-                                using (MD5 md5Hash = MD5.Create())
+
+                                if (converterMD5)
                                 {
-                                    return GetMd5Hash(md5Hash, Convert.ToBase64String(cipherTextBytes));
+                                    using (MD5 md5Hash = MD5.Create())
+                                    {
+                                        return GetMD5(md5Hash, Convert.ToBase64String(cipherTextBytes));
+                                    }
                                 }
+                                else
+                                {
+                                    return Convert.ToBase64String(cipherTextBytes);
+                                }
+                                
                             }
                         }
                     }
@@ -71,7 +80,25 @@ namespace TesteLeonardo.Helper
             }
         }
 
-        static string GetMd5Hash(MD5 md5Hash, string input)
+        public static string ToMD5(string frase)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                return GetMD5(md5Hash, frase);
+            }
+        }
+        public static bool ValidaMD5(string md5, string frase)
+        {
+            bool validado = false;
+            using (MD5 md5Hash = MD5.Create())
+            {
+                validado = VerifyMd5Hash(md5Hash, frase, md5);
+            }
+
+            return validado;
+        }
+
+        static string GetMD5(MD5 md5Hash, string input)
         {
             byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
 
@@ -85,42 +112,72 @@ namespace TesteLeonardo.Helper
             return sBuilder.ToString();
         }
 
-        public static string Decrypt(string cipherText, string passPhrase)
+        static bool VerifyMd5Hash(MD5 md5Hash, string input, string hash)
         {
-            // Get the complete stream of bytes that represent:
-            // [32 bytes of Salt] + [32 bytes of IV] + [n bytes of CipherText]
-            var cipherTextBytesWithSaltAndIv = Convert.FromBase64String(cipherText);
-            // Get the saltbytes by extracting the first 32 bytes from the supplied cipherText bytes.
-            var saltStringBytes = cipherTextBytesWithSaltAndIv.Take(Keysize / 8).ToArray();
-            // Get the IV bytes by extracting the next 32 bytes from the supplied cipherText bytes.
-            var ivStringBytes = cipherTextBytesWithSaltAndIv.Skip(Keysize / 8).Take(Keysize / 8).ToArray();
-            // Get the actual cipher text bytes by removing the first 64 bytes from the cipherText string.
-            var cipherTextBytes = cipherTextBytesWithSaltAndIv.Skip((Keysize / 8) * 2).Take(cipherTextBytesWithSaltAndIv.Length - ((Keysize / 8) * 2)).ToArray();
+            string hashOfInput = GetMD5(md5Hash, input);
 
-            using (var password = new Rfc2898DeriveBytes(passPhrase, saltStringBytes, DerivationIterations))
+            StringComparer comparer = StringComparer.OrdinalIgnoreCase;
+
+            if (0 == comparer.Compare(hashOfInput, hash))
             {
-                var keyBytes = password.GetBytes(Keysize / 8);
-                using (var symmetricKey = new RijndaelManaged())
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static string Decrypt(string hashMD5, string passPhrase, string expiraEm)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                var cipher = Encrypt(expiraEm, passPhrase, false);
+
+                if (VerifyMd5Hash(md5Hash, cipher, hashMD5))
                 {
-                    symmetricKey.BlockSize = 256;
-                    symmetricKey.Mode = CipherMode.CBC;
-                    symmetricKey.Padding = PaddingMode.PKCS7;
-                    using (var decryptor = symmetricKey.CreateDecryptor(keyBytes, ivStringBytes))
+                    
+
+                    // Get the complete stream of bytes that represent:
+                    // [32 bytes of Salt] + [32 bytes of IV] + [n bytes of CipherText]
+                    var cipherTextBytesWithSaltAndIv = Convert.FromBase64String(cipher);
+                    // Get the saltbytes by extracting the first 32 bytes from the supplied cipherText bytes.
+                    var saltStringBytes = cipherTextBytesWithSaltAndIv.Take(Keysize / 8).ToArray();
+                    // Get the IV bytes by extracting the next 32 bytes from the supplied cipherText bytes.
+                    var ivStringBytes = cipherTextBytesWithSaltAndIv.Skip(Keysize / 8).Take(Keysize / 8).ToArray();
+                    // Get the actual cipher text bytes by removing the first 64 bytes from the cipherText string.
+                    var cipherTextBytes = cipherTextBytesWithSaltAndIv.Skip((Keysize / 8) * 2).Take(cipherTextBytesWithSaltAndIv.Length - ((Keysize / 8) * 2)).ToArray();
+
+                    using (var password = new Rfc2898DeriveBytes(passPhrase, saltStringBytes, DerivationIterations))
                     {
-                        using (var memoryStream = new MemoryStream(cipherTextBytes))
+                        var keyBytes = password.GetBytes(Keysize / 8);
+                        using (var symmetricKey = new RijndaelManaged())
                         {
-                            using (var cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Read))
+                            symmetricKey.BlockSize = 256;
+                            symmetricKey.Mode = CipherMode.CBC;
+                            symmetricKey.Padding = PaddingMode.PKCS7;
+                            using (var decryptor = symmetricKey.CreateDecryptor(keyBytes, ivStringBytes))
                             {
-                                var plainTextBytes = new byte[cipherTextBytes.Length];
-                                var decryptedByteCount = cryptoStream.Read(plainTextBytes, 0, plainTextBytes.Length);
-                                memoryStream.Close();
-                                cryptoStream.Close();
-                                return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount);
+                                using (var memoryStream = new MemoryStream(cipherTextBytes))
+                                {
+                                    using (var cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Read))
+                                    {
+                                        var plainTextBytes = new byte[cipherTextBytes.Length];
+                                        var decryptedByteCount = cryptoStream.Read(plainTextBytes, 0, plainTextBytes.Length);
+                                        memoryStream.Close();
+                                        cryptoStream.Close();
+                                        return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount);
+                                    }
+                                }
                             }
                         }
                     }
                 }
-            }
+                else
+                {
+                    throw new Exception("Erro na descriptografia.");
+                }
+            }            
         }
 
         private static byte[] Generate256BitsOfRandomEntropy()

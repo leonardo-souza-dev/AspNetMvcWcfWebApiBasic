@@ -30,7 +30,9 @@
                 
                 $scope.guid = guid.toUpperCase();
 
+                $('#tokenExpirado').addClass('ng-hide');
                 $scope.tokenExpirado = false;
+                
 
             }, function erroCallback(response) {
                 console.log('Error');

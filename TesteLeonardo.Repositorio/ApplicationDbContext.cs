@@ -15,6 +15,11 @@ namespace TesteLeonardo.Repositorio
         {
         }
 
+        public static ApplicationDbContext Create()
+        {
+            return new ApplicationDbContext();
+        }
+
         public DbSet<Produto> Produtos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
